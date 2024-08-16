@@ -1,0 +1,76 @@
+Operators
+------------------
+
+* arithmetic Operator:
+ --------------------
+ a = 10 : b = 5
+
+[a + b] = 10 + 5 = 15;
+[a - b] = 10 - 5 = 10;
+[a * b] = 10 * 5 = 50;
+[a / b] = 10 / 5 = 2;
+[a % b] = 10 % 5 = 0;	
+
+ a = 10.0 : b = 5.0
+[a + b] = 10.0 + 5.0 = 15.0;
+[a - b] = 10.0 - 5.0 = 10.0;
+[a * b] = 10.0 * 5.0 = 50.0;
+[a / b] = 10.0 / 5.0 = 2.0;
+[a % b] = 10.0 % 5.0 = 0.0;
+
+* Unary Operator:
+---------------------------
+ a =10 : b
+ 
+b = ++a; a = 11; b= 11
+b = a++; a = 12; b= 11
+b = --a; a = 11; b= 11
+b = a--; a = 10; b= 11
+
+* Relational Operator:
+---------------------------
+ a = 3; b = 3; c=4
+
+a == c [false]
+a == b [ true]
+a! = b [false]
+a = c [ a =4; c =4]
+a > b [false]
+c > a [true]
+a >= b [ true]
+
+* Logical Operator:
+----------------------
+
+a = True b = False
+
+a && b = false; AND Operator
+a || b = true;  OR Operator
+!a = False;	NOT Operator
+
+---------------------------------------------------------------------------------------	
+
+String ---mutable--> By StringBuffer and StringBuilder ?
+
+STRING IS IMMUTABLE because Once a String object is created,
+its value cannot be changed. Any operation that seems to modify a string actually creates a new String object 
+	
+StringBuffer:
+-------------
+ StringBuffer allows modifications to the string it holds. 
+ It provides methods to append, insert, delete, and replace characters.
+
+ StringBuffer is synchronized, meaning it is thread-safe and 
+ It can be used in a multi-threaded environment without additional synchronization.
+
+StringBuilder:
+--------------
+Similar to StringBuffer, StringBuilder allows modifications to the string it holds.
+
+StringBuilder is not synchronized, making it more suitable for single-threaded scenarios where synchronization is not a concern.
+
+Conclusion:
+------------
+
+Strings in Java are immutable. Each modification operation creates a new String object.
+Mutable Types like StringBuffer and StringBuilder allow in-place modifications without creating new objects.
